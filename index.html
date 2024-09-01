@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <!-- ?  =================    icon page  =================== -->
+    <link rel="icon" rel="stylesheet" href="images/logo.png" />
+    <!-- ?  =================    fontawsome file  =================== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ?  =================    bootstrap file  =================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ?  =================    css file  =================== -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div
+      class="loading-screen z-3 position-fixed top-0 start-0 end-0 bottom-0 align-items-center justify-content-center"
+    >
+      <i class="fa-solid fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <!-- *   ================     START SIDE NAV     =================-->
+    <div class="side-nav-menu d-flex min-vh-100 position-fixed z-2">
+      <div
+        class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4"
+      >
+        <div class="links">
+          <ul class="list-unstyled overflow-hidden">
+            <li
+              role="button"
+              onclick="showSearchInput() ; closeSideNav()"
+              class="py-2 position-relative"
+            >
+              Search
+            </li>
+            <li
+              role="button"
+              onclick="getCategories() ; closeSideNav()"
+              class="py-2 position-relative"
+            >
+              Categories
+            </li>
+            <li
+              role="button"
+              onclick="getArea() ; closeSideNav()"
+              class="py-2 position-relative"
+            >
+              Area
+            </li>
+            <li
+              role="button"
+              onclick="getIngredients() ; closeSideNav()"
+              class="py-2 position-relative"
+            >
+              Ingredients
+            </li>
+            <li
+              role="button"
+              onclick="showContacts() ; closeSideNav()"
+              class="py-2 position-relative"
+            >
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>
+              Copyright Â© 2024 All Rights<br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-header d-flex flex-column justify-content-between py-4 text-center bg-white px-2 text-black"
+      >
+        <img class="logo" src="images/logo.png" alt="" />
+        <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- *   ================     END SIDE NAV     =================-->
+
+    <!-- *   ================     START SEARCH     =================-->
+    <div class="container w-75 mx-auto py-4" id="searchContainer"></div>
+
+    <!-- *   ================     END SEARCH     =================-->
+
+    <!-- *   ================     START HOME SEECTION     =================-->
+    <div class="position-relative min-vh-100">
+      <div
+        class="inner-loadin-screen z-1 top-0 start-0 end-0 bottom-0 align-items-center justify-content-center"
+      >
+        <i class="fa-solid fa-spinner fa-spin fa-5x"></i>
+      </div>
+      <div class="container py-5">
+        <div class="row g-4" id="rowData"></div>
+      </div>
+    </div>
+    <!-- *   ================     END HOME SEECTION      =================-->
+
+    <!-- *   ================     START CONTACT     =================-->
+
+    <!-- *   ================     END CONTACT      =================-->
+
+    <!-- ?  =================    jquery file  =================== -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- ?  =================    bootstrap file  =================== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ?  =================    js file  =================== -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
